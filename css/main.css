@@ -96,6 +96,7 @@ width: 80vw;
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.3em;
 }
 
 
@@ -120,7 +121,7 @@ h2 {
   color: #E79332;
 }
 
-.threecolumnsection {
+.plaidbackground {
 
 background-image: url("../images/background.svg");
 background-repeat: repeat;
@@ -138,7 +139,7 @@ background-repeat: repeat;
   font-size: 2em;
   color: #174158;
 }
- 
+
 
 .videooverlay {
 margin: 15vh 0 0 0;
@@ -206,7 +207,8 @@ p {
   width: 60vw;
 }
 
-button {
+.button {
+  text-decoration: none;
   background-color: rgba(255,255,255,.1);
   color: #fff;
   cursor: pointer;
