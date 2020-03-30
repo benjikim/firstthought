@@ -280,6 +280,7 @@ ul.therapeuticclasses li, ul.areasofexpertise li {
 a {
   text-decoration: none;
   transition: color 1s;
+  text-decoration: underline;
 }
 
 a:hover {
