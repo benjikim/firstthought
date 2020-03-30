@@ -21,7 +21,7 @@ padding: 5vh 0 0 0;
   display: none;
 }
 
-.hero, .quotesection, .footer {
+.hero, .quotesection{
 background: linear-gradient(-45deg,#162835,#385469,#325c55,#162835);
 background-size: 400% 400%;
 -webkit-animation: gradientBG 10s ease infinite;
@@ -135,7 +135,7 @@ background-repeat: repeat;
   height: 40vh;
 }
 
-.threecolumnsection h3, .subtext, .therapeuticclasses, .areasofexpertise, a {
+.threecolumnsection h3, .subtext, .therapeuticclasses, .areasofexpertise, .breadcrumb {
   font-family: lato;
   font-weight: 400;
   font-size: 2em;
@@ -238,7 +238,7 @@ p {
   cursor: pointer;
   padding: .6em;
   border-radius: 6px;
-  border: 2px solid #fff;
+  border:2px solid rgba(255,255,255,.4);
   font-size: 2em;
   font-family: lato;
   font-weight: 300;
@@ -251,6 +251,7 @@ p {
 
 
 .footer {
+  background: #162835;
   font-size: 2em;
   font-family: Lato;
   color: #fff;
@@ -282,8 +283,17 @@ a {
 }
 
 a:hover {
-   color: #FFD8AB;
+   color: #32973E;
+   cursor: pointer;
+}
 
+
+a.button:hover {
+  color: #FFD8AB;
+  border: 2px solid #fff;
+  -webkit-animation: gradientBG 10s ease infinite;
+  animation: gradientBG 10s ease infinite;
+  transition: border 1s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -318,12 +328,13 @@ ul.mainnav {
   display: none;
 }
 
-.button {
+a.button {
   text-align: center;
   margin-bottom: 2em;
   display: block;
   width: 90%;
 }
+
 
 .logo {
   width: 85vw;
