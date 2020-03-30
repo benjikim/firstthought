@@ -119,7 +119,7 @@ background-repeat: repeat;
 }
 
 .videobackground {
-  background-image: url("../images/fpo.png");
+  background-image: url("../images/videoimage.png");
   height: 40vh;
 }
 
@@ -131,11 +131,6 @@ background-repeat: repeat;
 }
 .subtext {
   font-size: 1.4em;
-}
-
-.videobackground {
-  background-image: url("../images/videoimage.png");
-  background-color: #000;
 }
 
 .videooverlay {
