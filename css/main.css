@@ -9,7 +9,7 @@ body > div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10vh 10vw;
+  padding: 5vh 10vw;
   width: 80vw;
 }
 
@@ -26,6 +26,10 @@ background: linear-gradient(-45deg,#162835,#385469,#325c55,#162835);
 background-size: 400% 400%;
 -webkit-animation: gradientBG 10s ease infinite;
 animation: gradientBG 10s ease infinite;
+}
+
+.hero {
+padding-bottom: 10em;
 }
 
 @keyframes gradientBG {
@@ -80,7 +84,8 @@ width: 80vw;
   font-size: 2.1em;
   color: #fff;
     letter-spacing: .04em;
-    width: 70vw;
+    width: 60vw;
+    padding: .75em 0;
 }
 
 
@@ -133,7 +138,7 @@ background-repeat: repeat;
   height: 40vh;
 }
 
-.threecolumnsection h3, .subtext, .therapeuticclasses, .areasofexpertise {
+.threecolumnsection h3, .subtext, .therapeuticclasses, .areasofexpertise, a {
   font-family: lato;
   font-weight: 400;
   font-size: 2em;
@@ -243,4 +248,14 @@ ul.therapeuticclasses li, ul.areasofexpertise li {
   width: 50vw;
   font-weight: 300;
   font-family: lato;
+}
+
+a {
+  text-decoration: none;
+  transition: color 1s;
+}
+
+a:hover {
+   color: #FFD8AB;
+
 }
