@@ -27,6 +27,19 @@ body > div > div {
   z-index: 999;
 }
 
+@keyframes logoappear {
+  0% {
+     opacity:0;
+  }
+  100% {
+     opacity:1;
+  }
+}
+
+.home > .logo {
+  animation: 5s ease-out 0s 1 logoappear;
+}
+
 .logo {
 padding: 5vh 0 0 0;
 }
@@ -42,8 +55,21 @@ background-size: 400% 400%;
 animation: gradientBG 10s ease infinite;
 }
 
+@keyframes heroappear {
+  0% {
+     opacity:0;
+  }
+  100% {
+     opacity:1;
+  }
+}
+
 .hero {
 padding-bottom: 10em;
+}
+
+.home {
+  animation: 1s ease-out 0s 1 heroappear;
 }
 
 @keyframes gradientBG {
@@ -311,8 +337,6 @@ a:hover {
 a.button:hover {
   color: #FFD8AB;
   border: 2px solid #fff;
-  -webkit-animation: gradientBG 10s ease infinite;
-  animation: gradientBG 10s ease infinite;
   transition: border 1s;
 }
 
