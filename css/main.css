@@ -10,7 +10,7 @@ body > div {
   margin-left: auto;
   margin-right: auto;
   padding: 5vh 10vw;
-  width: 80vw;
+
 }
 
 .logo {
@@ -49,7 +49,7 @@ list-style: none;
 margin: 0;
 padding: 0;
 
-width: 80vw;
+
 }
 
  ul.mainnav li  {
@@ -109,9 +109,6 @@ width: 80vw;
   font-family: lato;
 }
 
-.threecolumnsection {
-
-}
 
 h1 {
   font-family: Merriweather;
@@ -123,7 +120,7 @@ h2 {
   font-family: lato;
   font-weight: 400;
   font-size: 2em;
-  color: #E79332;
+  
 }
 
 .plaidbackground {
@@ -158,12 +155,34 @@ margin: 15vh 0 0 0;
   padding: 1.1em;
 }
 
-.column {
+.threecolumnsection .column {
 display:inline-block;
 vertical-align: top;
-  width: 22vw;
   padding-right: 1em;
 }
+
+.threecolumnsection .column {
+width: 22vw;
+}
+
+.twocolumnsection .column {
+display: inline-block;
+vertical-align: top;
+width: 44vw;
+
+}
+
+.columnsmall {
+  display: inline-block;
+  vertical-align: top;
+  width: 20vw;
+  border: 1px solid green;
+  padding: 1em 2em;
+  border-radius: 6px;
+  margin-left: 2em;
+
+}
+
 
 .Superiorsection {
   display: flex;
@@ -174,7 +193,7 @@ align-items: center;
 .expertsin .column {
   vertical-align: top;
   width: 22vw;
-  display:inline-block;
+
 }
 
 .img-fluid {
@@ -188,16 +207,12 @@ box-shadow: 6px;
   filter: drop-shadow(5px 8px 0px #A3C0AD);
 }
 
-.expertisesection {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70vw;
-}
+
 
 .servicessection, .expertsin {
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
+
   text-align:center;
 }
 
@@ -209,7 +224,7 @@ p {
   font-family: lato;
   line-height: 1.5em;
   font-size: 2em;
-  width: 60vw;
+
 }
 
 .button {
@@ -245,7 +260,7 @@ ul.therapeuticclasses li, ul.areasofexpertise li {
   font-size: 1.8em;
   padding: 0 0 1em 0;
   line-height: 1.5em;
-  width: 50vw;
+
   font-weight: 300;
   font-family: lato;
 }
