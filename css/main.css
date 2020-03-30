@@ -142,6 +142,10 @@ background-repeat: repeat;
   color: #174158;
 }
 
+.areasofexpertise .column, .therapeuticclasses .column {
+  margin-right: 3em;
+}
+
 
 .videooverlay {
 margin: 15vh 0 0 0;
@@ -238,17 +242,24 @@ p {
   font-size: 2em;
   font-family: lato;
   font-weight: 300;
+  margin-right: 1em;
 }
 
-/* button + button {
-  background-color: #E79332;
-} */
+.button + .button::before {
+
+}
 
 
 .footer {
   font-size: 2em;
   font-family: Lato;
+  color: #fff;
+}
 
+.footer > a {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700, bold;
 }
 
 ul.therapeuticclasses li, ul.areasofexpertise li {
