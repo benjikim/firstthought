@@ -1,4 +1,5 @@
-<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="8" height="8" fill="white"/>
-<circle cx="4" cy="4" r="1" fill="#EBF5FE"/>
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14" height="14" fill="white"/>
+<circle cx="4.5" cy="4.5" r="1.5" fill="#FAFCFF"/>
+<circle cx="7" cy="7" r="2" fill="#F3F9FF"/>
 </svg>
