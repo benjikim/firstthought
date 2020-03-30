@@ -134,6 +134,7 @@ background-repeat: repeat;
 }
 
 .videobackground {
+  background-image: url("../images/videoimage.png");
   background-color: #000;
 }
 
