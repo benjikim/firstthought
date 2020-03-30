@@ -191,7 +191,7 @@ align-items: center;
 }
 
 .expertsin .column {
-  vertical-align: top;
+  vertical-align: middle;
   width: 22vw;
 
 }
@@ -279,7 +279,7 @@ a:hover {
 
   body > div {
 margin: 0;
- 
+
   }
 
   .quote, .img-fluid, .missiontext, .threecolumnsection .column, .threecolumnsection .column, .twocolumnsection .column, .columnsmall {
@@ -298,6 +298,11 @@ margin: 0;
     margin: 10vh 0;
   }
 
+.areasofexpertise .column, .therapeuticclasses .column {
+  margin: 0;
+}
+
+
 ul.mainnav {
   display: none;
 }
@@ -311,6 +316,10 @@ ul.mainnav {
 
 .logo {
   width: 85vw;
+}
+
+.columnsmall {
+  padding: 1em;
 }
 
 }
