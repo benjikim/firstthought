@@ -277,7 +277,12 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
-  .img-fluid, .missiontext, .threecolumnsection .column, .threecolumnsection .column, .twocolumnsection .column, .columnsmall {
+  body > div {
+margin: 0;
+ 
+  }
+
+  .quote, .img-fluid, .missiontext, .threecolumnsection .column, .threecolumnsection .column, .twocolumnsection .column, .columnsmall {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -285,6 +290,10 @@ a:hover {
 
   }
 
+.quote {
+
+  font-size: 1em;
+}
   .column {
     margin: 10vh 0;
   }
@@ -297,11 +306,11 @@ ul.mainnav {
   text-align: center;
   margin-bottom: 2em;
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 .logo {
-  width: 100%;
+  width: 85vw;
 }
 
 }
