@@ -120,7 +120,7 @@ background-repeat: repeat;
 
 .videobackground {
   background-image: url("../images/videoimage.png");
-  background-size: auto;
+  background-size: 100%;
   height: 40vh;
 }
 
