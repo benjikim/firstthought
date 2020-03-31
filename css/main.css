@@ -213,11 +213,14 @@ vertical-align: top;
 width: 22vw;
 }
 
-.twocolumnsection .column, .summary {
+.twocolumnsection .column {
 display: inline-block;
 vertical-align: top;
 width: 44vw;
+}
 
+.summary {
+  width: 60vw;
 }
 
 .columnsmall {
@@ -233,16 +236,21 @@ width: 44vw;
 
 
 .Superiorsection {
+  vertical-align: middle;
   display: flex;
 justify-content: center;
 align-items: center;
 }
 
 .expertsin .column {
-  vertical-align: middle;
+  vertical-align: top;
   width: 22vw;
-
 }
+
+.Superiorsection .column {
+  display: inline-block;
+
+ }
 
 .img-fluid {
   width: 25vw;
