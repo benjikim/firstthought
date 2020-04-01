@@ -17,15 +17,20 @@
   <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 <body>
+<nav>
+  <img src="images/main-logo.svg" class="logosmall" />
+  <div >
+  <a href="https://firstthought.io" >Start a Project</a>
+  <a href="expert.html" >Become an Expert</a>
+</div>
+</nav>
+
+
   <div class="background-image"></div>
   <div class="content">
 <div class="home hero">
-<ul class="mainnav">
-<li>About Us</li>
-<li>Services</li>
-<li>Our Expertise</li>
-<li>Contact</li>
-</ul>
+
+
 <img class="logo" src="images/main-logo.svg" />
 <span class="companyname">FirstThought</span>
 <h1 class="headline">The life sciences expert network</h1>
@@ -81,27 +86,40 @@
 </div><!-- end videobackground -->
 
 <div class="threecolumnsection plaidbackground">
-<h1>Areas of Expertise</h1>
-<h2>Only network solely in the life sciences by therapeutic category expertise</h2>
+<h1>Therapeutic Areas of Expertise</h1>
+<h2>Only network solely dedicated to the life sciences industry, with expertise across all therapeutic categories:</h2>
 
 <ul class="therapeuticclasses">
   <div class="column">
-<li>Neurology Neuro-surgery</li>
+<li>Neurology</li>
+<li>Neuro-surgery</li>
 <li>Oncology</li>
-<li>Endocrinology/Cardiology</li>
+<li>Endocrinology</li>
+<li>Cardiology</li>
 <li>Hematology</li>
 <li>Infectious Diseases</li>
-<li>OB-GYN/ Reproductive Endocrinology</li>
-<li>Hepatology/Nephrology</li>
+<li>OB-GYN</li>
+<li>Reproductive Endocrinology</li>
+<li>Hepatology</li>
+<li>Nephrology</li><li>Rheumatalogy</li>
 </div>
 <div class="column">
-<li>Rheumatalogy</li>
+
 <li>Otolaryngology</li>
-<li>Genetic Disorders/Orphan Diseases</li>
+<li>Genetic Disorders</li>
+<li>Orphan Diseases</li>
 <li>Radiology</li>
 <li>Dermatology</li>
 <li>Gene Therapy</li>
 <li>Pain Medicine</li>
+
+<li>Orthopedics</li>
+<li>Critical Care Medicine</li>
+<li>Pulmonology</li>
+<li>General Surgery</li>
+<li>Internal Medicine</li>
+
+
 </div>
 </ul>
 <br /><hr />
@@ -170,4 +188,40 @@ FirstThought // New York • London • Tel-Aviv <br /><br />
 <div><!--footer -->
 </div><!--content -->
 </body>
+
+<script>
+
+var one = document.querySelector( ".videobackground" );
+var nav = document.querySelector("nav");
+var clientHeight = document.querySelector( ".videobackground" ).clientHeight;
+
+var rect = one.getBoundingClientRect();
+var simple = rect.top;
+
+window.onscroll = function() {
+  var currentScrollPos = window.innerHeight;
+  var Scrollpos = window.scrollY;
+
+  if (Scrollpos > (simple - clientHeight)) {
+ one.classList.add("show");
+
+  } else {
+
+  }
+  if (Scrollpos > 100 ){
+console.log('yes');
+
+ nav.classList.add("show");
+} else {
+  nav.classList.remove("show");
+
+}
+
+  prevScrollpos = currentScrollPos;
+
+}
+
+
+</script>
+
 </html>
