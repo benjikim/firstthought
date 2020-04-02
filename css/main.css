@@ -47,7 +47,7 @@ padding: 5vh 0 0 0;
 
 .home {
   animation: 1s ease-out 0s 1 heroappear;
-height: 100vh;
+height: 90vh;
 padding-bottom: 0;
 }
 
@@ -122,7 +122,7 @@ padding: 0;
   color: #fff;
     letter-spacing: .04em;
     width: 60vw;
-    padding: .75em 0;
+    padding: .5em 0;
     opacity: 0;
 
     position: relative;
@@ -142,7 +142,7 @@ animation-fill-mode: forwards;
 
 .summary {
   width: 80vw;
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 .expanddiv {
@@ -313,7 +313,7 @@ align-items: center;
 
 .Superiorsection .column {
   display: inline-block;
-
+width: auto;
  }
 
 .img-fluid {
@@ -536,7 +536,7 @@ nav a {
   position: relative;
 animation-name: example3;
 animation-duration: 2s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 }
 
@@ -544,7 +544,7 @@ animation-fill-mode: forwards;
   position: relative;
 animation-name: example3;
 animation-duration: 2s;
-animation-delay: 4s;
+animation-delay: 3s;
 animation-fill-mode: forwards;
 }
 
