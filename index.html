@@ -44,14 +44,11 @@
 <!-- <button class="CTA-expert">Become an Expert</button> -->
 </div> <!--end hero-->
 
-<div class="threecolumnsection plaidbackground">
+<div class="threecolumnsection plaidbackground expanddiv">
 <h1>Staffed with healthcare professionals and scientists</h1>
 <p class="summary">
-  FirstThought’s client servicing and recruiting teams are made up of members with advanced degrees and knowledge specific to our clients’ needs within the life sciences industry. Our medical and scientific backgrounds allow us to better identify and connect our clients with the most relevant experts to fit their research requirements.
+  FirstThought’s client servicing and recruiting teams are made up of members with <span class="highlight">advanced degrees</span> and knowledge specific to our clients’ needs within the life sciences industry. Our <span class="highlight2">medical and scientific backgrounds</span> allow us to better identify and connect our clients with the most relevant experts to fit their research requirements.
 </p>
-<br />
-
-
 </div><!-- end 3columnsection -->
 
 <div class="quotesection">
@@ -64,17 +61,17 @@
 <h2>TBD</h2>
 <div class="servicessection">
 <div class="column">
-<img class="services" src="images/phoneconsultations.svg">
+<img class="phoneconsultations" src="images/phoneconsultations.svg">
 <h3>Phone Consultations</h3>
 <span class="subtext">1-1 Phone conversations with experts</span>
 </div>
 <div class="column">
-<img class="services" src="images/surveys.svg">
+<img class="surveys" src="images/surveys.svg">
 <h3>Surveys</h3>
 <span class="subtext">Utilize surveys to aggregate collections of expert insights</span>
 </div>
 <div class="column">
-<img class="services" src="images/inperson.svg">
+<img class="inperson" src="images/inperson.svg">
 <h3>In Person</h3>
 <span class="subtext">On-site meetings with experts at offices, workshops, industry conferences and more</span>
 </div>
@@ -99,16 +96,19 @@
 <li>Hematology</li>
 <li>Infectious Diseases</li>
 <li>OB-GYN</li>
+</div>
+<div class="column">
 <li>Reproductive Endocrinology</li>
 <li>Hepatology</li>
 <li>Nephrology</li><li>Rheumatalogy</li>
-</div>
-<div class="column">
+
 
 <li>Otolaryngology</li>
 <li>Genetic Disorders</li>
 <li>Orphan Diseases</li>
 <li>Radiology</li>
+</div>
+<div class="column">
 <li>Dermatology</li>
 <li>Gene Therapy</li>
 <li>Pain Medicine</li>
@@ -122,20 +122,24 @@
 
 </div>
 </ul>
+</div>
+
+
+
 <br /><hr />
 <div class="threecolumnsection plaidbackground">
 <h1>Experts In</h1>
   <div class="expertsin">
   <div class="column">
-    <div class="tag-wrap"><img class="img-fluid" src="images/payorcoverage.jpg"></div>
+    <div class="tag-wrap"><img class="img-fluid payorcoverage" src="images/payorcoverage.jpg"></div>
   <h3>Payor Coverage</h3>
    </div>
   <div class="column">
-<div class="tag-wrap"><img class="img-fluid" src="images/medicalmeetings.jpg"></div>
+<div class="tag-wrap"><img class="img-fluid medicalmeetings" src="images/medicalmeetings.jpg"></div>
   <h3>Medical Meetings <br />Presence</h3>
    </div>
   <div class="column">
-    <div class="tag-wrap"><img class="img-fluid" src="images/regulatoryapproval.jpg"></div>
+    <div class="tag-wrap"><img class="img-fluid regulatoryapproval" src="images/regulatoryapproval.jpg"></div>
   <h3>Regulatory Approval <br />Expertise</h3>
    </div>
   </div><!-- end services section -->
@@ -159,7 +163,7 @@
 </div>
 <br />
 
-</div> <!-- end TBDsection-->
+ <!-- end TBDsection-->
 
 <div class="quotesection">
 <div class="quote"><h1>“FirstThought’s network of medical and pharmacy directors at managed care organizations helped us complete the reimbursement focus of our due diligence in record time” </h1>
@@ -193,33 +197,99 @@ FirstThought // New York • London • Tel-Aviv <br /><br />
 
 var one = document.querySelector( ".videobackground" );
 var nav = document.querySelector("nav");
-var clientHeight = document.querySelector( ".videobackground" ).clientHeight;
 
+var Superiorsection = document.querySelector('.areasofexpertise').getBoundingClientRect();
+var Superiorsectionpos = Superiorsection.top * .8;
+
+
+var summarysection = document.querySelector('.summary').getBoundingClientRect();
+var summarysectionpos = summarysection.top * .2 ;
+
+
+
+var clientHeight = document.querySelector( ".videobackground" ).clientHeight;
+var servicessection = document.querySelector(".subtext").getBoundingClientRect();
+var servicesypos = servicessection.top ;
 var rect = one.getBoundingClientRect();
 var simple = rect.top;
+
+var phoneconsultations = document.querySelector('.phoneconsultations');
+var surveys = document.querySelector('.surveys');
+var inperson = document.querySelector('.inperson');
 
 window.onscroll = function() {
   var currentScrollPos = window.innerHeight;
   var Scrollpos = window.scrollY;
 
-  if (Scrollpos > (simple - clientHeight)) {
+if (Scrollpos > summarysectionpos) {
+
+document.querySelector('.expanddiv').classList.add('summaryexpand');
+
+
+} else {
+}
+
+
+   if (Scrollpos > (simple - clientHeight)) {
  one.classList.add("show");
 
   } else {
+    one.classList.remove("show");
 
   }
-  if (Scrollpos > 100 ){
-console.log('yes');
-
- nav.classList.add("show");
+  if (Scrollpos > summarysectionpos ){
+    console.log('yes')
+document.querySelector('.highlight').classList.add('highlighton');
+document.querySelector('.highlight2').classList.add('highlighton2');
 } else {
-  nav.classList.remove("show");
+  console.log('no')
+
+
+ }
+
+if (Scrollpos > (servicesypos * .7) ) {
+ document.querySelector('.phoneconsultations').classList.add('phoneconsultationsanimation');
+  surveys.classList.add('surveysanimation');
+  inperson.classList.add('inpersonanimation');
+
+} else {
+}
+
+  if(Scrollpos > (Superiorsectionpos) ) {
+
+    document.querySelector('.medicalmeetings').classList.add('phoneconsultationsanimation');
+    document.querySelector('.payorcoverage').classList.add('surveysanimation');
+
+    document.querySelector('.regulatoryapproval').classList.add('inpersonanimation');
+
+
+} else {
 
 }
 
   prevScrollpos = currentScrollPos;
 
 }
+
+
+// Initial state
+var scrollPos = 0;
+// adding scroll event
+window.addEventListener('scroll', function(){
+
+if (window.scrollY > 800 ) {
+
+  // detects new state and compares it with the new one
+  if (((document.body.getBoundingClientRect()).top > scrollPos  ))
+		nav.classList.add("show");
+	else
+nav.classList.remove("show");
+	scrollPos = (document.body.getBoundingClientRect()).top;
+} else {
+  nav.classList.remove("show");
+}});
+
+
 
 
 </script>

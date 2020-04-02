@@ -9,7 +9,7 @@ body > div > div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 5vh 10vw;
+  padding: 5vh 5vw;
 }
 
 .background-image {
@@ -121,13 +121,85 @@ padding: 0;
 .missiontext {
   font-family: 'EB Garamond';
   font-weight: 400;
-  font-size: 2.1em;
+  font-size: 5em;
   color: #fff;
     letter-spacing: .04em;
     width: 60vw;
     padding: .75em 0;
+    opacity: 0;
+
+    position: relative;
+      animation-name: example;
+      animation-duration: 2s;
+      animation-delay: 500ms;
+animation-fill-mode: forwards;
+
+}
+@keyframes example {
+  0%   {left:0px; top:0px; opacity: 0}
+  100%  {left:0px; top:-20px; opacity: 1}
+  /* 50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;} */
 }
 
+.summary {
+  width: 80vw;
+  font-size: 5em;
+}
+
+.expanddiv {
+  border: 1px solid green;
+  padding-bottom: -20em;
+}
+
+
+.summaryexpand {
+transition: 4s;
+
+/* height: 35vh;
+   animation-name: summaryexample;
+   position: relative; */
+
+  /* animation-duration: 2s;
+  animation-delay: 500ms;
+animation-fill-mode: forwards; */
+}
+
+/* @keyframes summaryexample {
+  0%   { transform: scale(0.0); opacity: 0}
+  100%  { transform: scale(1.0); opacity: 1}
+} */
+
+.inperson,  .phoneconsultations, .surveys   {
+  opacity: 0;
+}
+
+.phoneconsultationsanimation {
+  animation-name: example;     position: relative;
+
+  animation-duration: 2s;
+  animation-delay: 700ms;
+animation-fill-mode: forwards;
+}
+
+
+.surveysanimation {
+  animation-name: example;     position: relative;
+
+  animation-duration: 2s;
+  animation-delay: 1200ms;
+animation-fill-mode: forwards;
+}
+
+
+.inpersonanimation {
+  animation-name: example;     position: relative;
+
+  animation-duration: 2s;
+  animation-delay: 1700ms;
+animation-fill-mode: forwards;
+}
 
 
 .quotesection .quote h1, .quoter {
@@ -171,8 +243,10 @@ background-image: url("../images/background.svg");
 background-repeat: repeat;
 } */
 
-
-
+ul.therapeuticclasses {
+  margin: 0;
+  padding: 0;
+}
 .threecolumnsection h3, .subtext, .therapeuticclasses, .areasofexpertise, .breadcrumb {
   font-family: lato;
   font-weight: 400;
@@ -181,7 +255,8 @@ background-repeat: repeat;
 }
 
 .areasofexpertise .column, .therapeuticclasses .column {
-  margin-right: 3em;
+  margin-right: 2.15em;
+  font-size: 1.5em;
 }
 
 
@@ -213,9 +288,7 @@ vertical-align: top;
 width: 44vw;
 }
 
-.summary {
-  width: 60vw;
-}
+
 
 .columnsmall {
   display: inline-block;
@@ -266,6 +339,10 @@ box-shadow: 6px;
   text-align:center;
 }
 
+
+.regulatoryapproval, .payorcoverage, .medicalmeetings {
+  opacity: 0;
+}
 /* .servicessection .column {
   padding: 1vw;
 } */
@@ -312,14 +389,14 @@ p {
 ul.therapeuticclasses li, ul.areasofexpertise li {
   padding: 0 0 .5em 0;
   font-size: .85em;
-  list-style-type: square;
+  list-style-type: none; list-style-position: outside;
 }
 
 .expertsection ul li {
   font-size: 1.8em;
   padding: 0 0 1em 0;
   line-height: 1.5em;
-
+list-style-position: outside;
   font-weight: 300;
   font-family: lato;
 }
@@ -393,25 +470,28 @@ a.button {
 }
 
 .videobackground {
+
   -webkit-clip-path: polygon(25% 10%, 90% 10%, 75% 95%, 10% 95%);
   clip-path: polygon(25% 10%, 90% 10%, 75% 95%, 10% 95%);
   background-image: url("../images/videoimage.png");
   background-size: 50%;
   background-position: center;
-  height: 40vh;
+  height: 30vh;
 filter: drop-shadow(5px 8px 0px #A3C0AD);
 /* opacity:0; */
 transition-timing-function: ease-in;
-transition: 2s;
+transition: 4s;
 
 }
+
+
+
 
 .hide {
     opacity:0;
     transition: 3s;
  }
 .show {
-    /* opacity:1; */
     background-size: 100%;
 opacity:1;
  }
@@ -448,4 +528,33 @@ nav a {
   font-size: 1.7em;
  padding-left: 2em;
   color: #fff;
+}
+
+.highlight, .highlight2 {
+  color: orange;
+  opacity: 0;
+}
+
+.highlighton {
+  position: relative;
+animation-name: example3;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+
+.highlighton2 {
+  position: relative;
+animation-name: example3;
+animation-duration: 2s;
+animation-delay: 4s;
+animation-fill-mode: forwards;
+}
+
+@keyframes example3 {
+0%   {left:0px; top:-20px; opacity: 0}
+100%  {left:0px; top:0px; opacity: 1}
+/* 50%  {left:200px; top:200px;}
+75%  {left:0px; top:200px;}
+100% {left:0px; top:0px;} */
 }

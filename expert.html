@@ -17,15 +17,23 @@
   <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 <body>
+  <nav>
+    <img src="images/main-logo.svg" class="logosmall" />
+    <div >
+    <a href="https://firstthought.io" >Start a Project</a>
+    <a href="expert.html" >Become an Expert</a>
+  </div>
+  </nav>
+
   <div class="background-image"></div>
   <div class="content">
 <div class="hero">
-<ul class="mainnav">
+<!-- <ul class="mainnav">
 <li>About Us</li>
 <li>Services</li>
 <li>Our Expertise</li>
 <li>Contact</li>
-</ul>
+</ul> -->
 <img class="logo" src="images/main-logo.svg" />
 <span class="companyname">FirstThought</span>
 <h1 class="headline">The life sciences expert network</h1>
@@ -61,5 +69,30 @@ FirstThought // New York • London • Tel-Aviv <br /><br />
 <em>Questions?</em><br /> <a href="">info@firstthought.io</a>
 
 <div><!--footer --><div><!--content -->
+
+  <script>
+
+  var nav = document.querySelector("nav");
+
+  // Initial state
+  var scrollPos = 0;
+  // adding scroll event
+  window.addEventListener('scroll', function(){
+
+  if (window.scrollY > 200 ) {
+
+    // detects new state and compares it with the new one
+    if (((document.body.getBoundingClientRect()).top > scrollPos  ))
+  		nav.classList.add("show");
+  	else
+  nav.classList.remove("show");
+  	scrollPos = (document.body.getBoundingClientRect()).top;
+  } else {
+    nav.classList.remove("show");
+  }});
+</script>
+
+
+
 </body>
 </html>
