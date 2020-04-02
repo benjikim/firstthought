@@ -401,7 +401,7 @@ list-style-position: outside;
 a {
   text-decoration: none;
   transition: color 1s;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(23,65,88,.3);
 }
 
 a:hover {
