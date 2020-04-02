@@ -47,6 +47,8 @@ padding: 5vh 0 0 0;
 
 .home {
   animation: 1s ease-out 0s 1 heroappear;
+height: 100vh;
+padding-bottom: 0;
 }
 
 
