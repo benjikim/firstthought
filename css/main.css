@@ -27,14 +27,7 @@ body > div > div {
   z-index: 2;
 }
 
-@keyframes logoappear {
-  0% {
-     opacity:0;
-  }
-  100% {
-     opacity:1;
-  }
-}
+
 
 .home > .logo {
   animation: 2s ease-out 0s 1 logoappear;
@@ -48,12 +41,14 @@ padding: 5vh 0 0 0;
   display: none;
 }
 
-.hero, .quotesection{
-background: linear-gradient(-45deg,#162835,#385469,#325c55,#162835);
-background-size: 400% 400%;
--webkit-animation: gradientBG 10s ease infinite;
-animation: gradientBG 10s ease infinite;
+
+
+
+
+.home {
+  animation: 1s ease-out 0s 1 heroappear;
 }
+
 
 @keyframes heroappear {
   0% {
@@ -64,13 +59,13 @@ animation: gradientBG 10s ease infinite;
   }
 }
 
-.hero {
-padding-bottom: 10em;
+.hero, .quotesection{
+background: linear-gradient(-45deg,#162835,#385469,#325c55,#162835);
+  background-size: 800% 800%;
+-webkit-animation: gradientBG 15s ease infinite;
+animation: gradientBG 15s ease infinite;
 }
 
-.home {
-  animation: 1s ease-out 0s 1 heroappear;
-}
 
 @keyframes gradientBG {
 	0% {
