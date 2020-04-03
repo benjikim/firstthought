@@ -37,6 +37,10 @@ body > div > div {
 padding: 5vh 0 0 0;
 }
 
+.logomark {
+  display: none;
+}
+
 .companyname {
   display: none;
 }
@@ -108,7 +112,7 @@ padding: 0;
 
 .headline {
   font-family: lato;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2em;
   color: #FFD8AB;
   padding: 0;
@@ -116,13 +120,13 @@ padding: 0;
 }
 
 .missiontext {
-  font-family: 'EB Garamond';
-  font-weight: 400;
+  font-family: 'lato';
+  font-weight: 300;
   font-size: 5em;
   color: #fff;
-    letter-spacing: .04em;
+    letter-spacing: .01em;
     width: 60vw;
-    padding: .5em 0;
+    padding: 0;
     opacity: 0;
 
     position: relative;
@@ -153,20 +157,7 @@ animation-fill-mode: forwards;
 
 .summaryexpand {
 transition: 4s;
-
-/* height: 35vh;
-   animation-name: summaryexample;
-   position: relative; */
-
-  /* animation-duration: 2s;
-  animation-delay: 500ms;
-animation-fill-mode: forwards; */
 }
-
-/* @keyframes summaryexample {
-  0%   { transform: scale(0.0); opacity: 0}
-  100%  { transform: scale(1.0); opacity: 1}
-} */
 
 .inperson,  .phoneconsultations, .surveys   {
   opacity: 0;
@@ -234,13 +225,9 @@ h2 {
 
 }
 
-/* .plaidbackground {
 
-background-image: url("../images/background.svg");
-background-repeat: repeat;
-} */
 
-ul.therapeuticclasses {
+ul.therapeuticclasses, ul.areasofexpertise {
   margin: 0;
   padding: 0;
 }
@@ -299,12 +286,7 @@ width: 44vw;
 }
 
 
-.Superiorsection {
-  vertical-align: middle;
-  display: flex;
-justify-content: center;
-align-items: center;
-}
+
 
 .expertsin .column {
   vertical-align: top;
@@ -312,6 +294,8 @@ align-items: center;
 }
 
 .Superiorsection .column {
+  vertical-align: middle;
+
   display: inline-block;
 width: auto;
  }
@@ -329,7 +313,7 @@ box-shadow: 6px;
 
 
 
-.servicessection, .expertsin {
+.servicessection, .expertsin,.Superiorsection {
   margin-left: auto;
   margin-right: auto;
 
@@ -435,6 +419,16 @@ margin: 0;
 
   font-size: 1em;
 }
+
+.missiontext {
+  padding: 2vh 0;
+}
+
+.summary, .missiontext {
+
+  font-size: 2.5em;
+}
+
   .column {
     margin: 10vh 0;
   }
@@ -456,16 +450,32 @@ a.button {
 }
 
 
-.logo {
-  width: 85vw;
-}
 
 .columnsmall {
   padding: 1em;
 }
 
+ul.therapeuticclasses li, ul.areasofexpertise li {
+  padding: 0 0 .5em 0;
+  font-size: .65em;
+  list-style-type: none; list-style-position: outside;
 }
 
+.hero {
+  height: 80vh;
+}
+
+.logosmall {
+  display: none;
+}
+
+.logomark {
+  display:flex;
+  width: 8vw;
+}
+
+}
+/* end list */
 .videobackground {
 
   -webkit-clip-path: polygon(25% 10%, 90% 10%, 75% 95%, 10% 95%);
@@ -473,7 +483,7 @@ a.button {
   background-image: url("../images/videoimage.png");
   background-size: 50%;
   background-position: center;
-  height: 30vh;
+  height: 40vh;
 filter: drop-shadow(5px 8px 0px #A3C0AD);
 /* opacity:0; */
 transition-timing-function: ease-in;
@@ -544,7 +554,7 @@ animation-fill-mode: forwards;
   position: relative;
 animation-name: example3;
 animation-duration: 2s;
-animation-delay: 3s;
+animation-delay: 2s;
 animation-fill-mode: forwards;
 }
 
