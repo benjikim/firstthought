@@ -426,7 +426,7 @@ margin: 0;
 
 .summary, .missiontext {
 
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
   .column {
@@ -449,7 +449,9 @@ a.button {
   width: 90%;
 }
 
-
+.footer > a {
+   font-size: 1em;
+ }
 
 .columnsmall {
   padding: 1em;
@@ -465,13 +467,16 @@ ul.therapeuticclasses li, ul.areasofexpertise li {
   height: 80vh;
 }
 
+.logo {
+  width: 90vw;
+}
+
 .logosmall {
   display: none;
 }
 
 .logomark {
-  display:flex;
-  width: 8vw;
+  display:none;
 }
 
 }
