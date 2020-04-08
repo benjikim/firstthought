@@ -512,12 +512,10 @@ font-family: 'lato', Arial, sans-serif;
   }
 
   nav a {
-  font-family: 'lato', Arial, sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+
     font-size: 1.2em;
-    padding-right: 1em;
-    color: #fff;
+
+ 
   }
 
   .columnsmall {
