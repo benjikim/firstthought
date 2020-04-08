@@ -515,7 +515,7 @@ font-family: 'lato', Arial, sans-serif;
   font-family: 'lato', Arial, sans-serif;
     font-weight: 700;
     text-decoration: none;
-    font-size: 1em;
+    font-size: .6em;
     padding-left: 2em;
     color: #fff;
   }
@@ -533,6 +533,10 @@ font-family: 'lato', Arial, sans-serif;
 
   .hero {
     height: 80vh;
+  }
+
+  .expertsection {
+    height: 40vh;
   }
 
   .logo {
