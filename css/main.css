@@ -514,8 +514,9 @@ font-family: 'lato', Arial, sans-serif;
   nav a {
 
     font-size: 1.2em;
+padding: 0;
+margin: 0;
 
- 
   }
 
   .columnsmall {
