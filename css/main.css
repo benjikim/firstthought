@@ -43,7 +43,7 @@ body>div>div {
 
 .home {
   animation: 1s ease-out 0s 1 heroappear;
-  height: 70vh;
+ 
   padding-bottom: 5vh;
 }
 
@@ -552,3 +552,39 @@ margin: 0;
 }
 
 /* end breakpoint */
+
+/* styleguide */
+
+.serif {
+  font-family: 'EB Garamond', serif; 
+  font-weight: 400;
+}
+
+.sans-serif {
+  font-family: 'lato', Arial, sans-serif;
+  font-weight: 300;
+}
+
+.colorbox {
+  display: inline-block;
+  height: 20vh;
+  width: 20vw;
+  padding: .5em;
+  margin-right: 3vw;
+  font-size: 2em;
+  color: #fff;
+}
+
+.orange {
+background-color: #E38525;
+}
+.blue {
+background-color: #162835;
+}
+.green {
+background-color: #32973E;
+}
+
+.threecolumnsection  a {
+  font-size: 3em;
+}

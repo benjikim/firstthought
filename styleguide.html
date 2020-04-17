@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>The life sciences expert network</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|EB+Garamond|Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
+
+  <!-- <meta name="theme-color" content="#fafafa"> -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163138661-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163138661-1');
+  </script>
+
+</head>
+
+<body>
+  <nav>
+    <img src="images/main-logo.svg" class="logosmall" />
+    <img src="images/mark.svg" class="logomark" />
+    <div>
+      <a href="https://firstthought.io">Start a Project</a>
+      <a href="expert.html">Be an Expert</a>
+    </div>
+  </nav>
+
+
+  <div class="background-image"></div>
+  <div class="content">
+    <div class="home hero">
+
+
+      <img class="logo" src="images/main-logo.svg" />
+      <span class="companyname">FirstThought</span>
+      <h1 class="headline">Styleguide</h1>
+    </div>
+    <!--end hero-->
+
+    <div class="threecolumnsection plaidbackground expanddiv">
+      <h1>Typography (Serif)</h1>
+      <p class="summary serif">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
+      <a href="EBGaramond-VariableFont_wght.ttf">EB Garamond / Regular 400 (click here to download)</a>
+    </div><!-- end 3columnsection -->
+
+    <div class="threecolumnsection plaidbackground expanddiv">
+      <h1>Typography (Sans-Serif)</h1>
+      <p class="summary Sans-Serif">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.       </p>
+        <a href="Lato-Light.ttf">Lato / Light 300 (click here to download)</a>
+    </div><!-- end 3columnsection -->
+
+    
+    <div class="threecolumnsection plaidbackground expanddiv">
+      <h1>Colors</h1>
+      <div class="colorbox orange">#E38525</div> <div class="colorbox blue">#162835</div> <div class="colorbox green">#32973E</div>
+        
+    </div><!-- end 3columnsection -->
+
+    <div class="threecolumnsection plaidbackground expanddiv">
+      <h1>Logos/Icons</h1>
+      <a href="icons_april20.zip">
+      <img src="images/logo.png" /><img src="images/mark.png">
+      <br />
+      (click here to download .zip)</a>
+        
+    </div>
+
+
+    <div class="footer">
+      FirstThought <br />
+      <em>last updated April 16 2020</em>
+      <div>
+        <!--footer -->
+      </div>
+      <!--content -->
+</body>
+
+<script>
+  var one = document.querySelector(".videobackground");
+  var nav = document.querySelector("nav");
+
+  var Superiorsection = document.querySelector('.areasofexpertise').getBoundingClientRect();
+  var Superiorsectionpos = Superiorsection.top * .8;
+
+
+  var summarysection = document.querySelector('.summary').getBoundingClientRect();
+  var summarysectionpos = summarysection.top * .2;
+
+
+
+  var clientHeight = document.querySelector(".videobackground").clientHeight;
+  var servicessection = document.querySelector(".subtext").getBoundingClientRect();
+  var servicesypos = servicessection.top;
+  var rect = one.getBoundingClientRect();
+  var simple = rect.top;
+
+  var phoneconsultations = document.querySelector('.phoneconsultations');
+  var surveys = document.querySelector('.surveys');
+  var inperson = document.querySelector('.inperson');
+
+  window.onscroll = function() {
+    var currentScrollPos = window.innerHeight;
+    var Scrollpos = window.scrollY;
+
+    if (Scrollpos > summarysectionpos) {
+
+      document.querySelector('.expanddiv').classList.add('summaryexpand');
+
+
+    } else {}
+
+
+    if (Scrollpos > (simple - clientHeight)) {
+      one.classList.add("show");
+
+    } else {
+      one.classList.remove("show");
+
+    }
+    if (Scrollpos > summarysectionpos) {
+      console.log('yes')
+      document.querySelector('.highlight').classList.add('highlighton');
+      document.querySelector('.highlight2').classList.add('highlighton2');
+    } else {
+      console.log('no')
+
+
+    }
+
+    if (Scrollpos > (servicesypos * .7)) {
+      document.querySelector('.phoneconsultations').classList.add('phoneconsultationsanimation');
+      surveys.classList.add('surveysanimation');
+      inperson.classList.add('inpersonanimation');
+
+    } else {}
+
+    if (Scrollpos > (Superiorsectionpos)) {
+
+      document.querySelector('.medicalmeetings').classList.add('surveysanimation');
+      document.querySelector('.payorcoverage').classList.add('phoneconsultationsanimation');
+
+      document.querySelector('.regulatoryapproval').classList.add('inpersonanimation');
+
+
+    } else {
+
+    }
+
+    prevScrollpos = currentScrollPos;
+
+  }
+
+
+  // Initial state
+  var scrollPos = 0;
+  // adding scroll event
+  window.addEventListener('scroll', function() {
+
+    if (window.scrollY > 800) {
+
+      // detects new state and compares it with the new one
+      if (((document.body.getBoundingClientRect()).top > scrollPos))
+        nav.classList.add("show");
+      else
+        nav.classList.remove("show");
+      scrollPos = (document.body.getBoundingClientRect()).top;
+    } else {
+      nav.classList.remove("show");
+    }
+  });
+</script>
+
+</html>
